@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
 <!--HEADER-->
-    <div class="header">
+    <div class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="user">
@@ -25,12 +26,12 @@
                         <div class="user__prof">UI &amp UX Designer</div>
                     </div>
                 </div>
-                <div class="nav">
-                    <a class="nav__link" href="#">work</a>
-                    <a class="nav__link" href="#">about me</a>
-                    <a class="nav__link" href="#">blog</a>
-                    <a class="nav__link" href="#">contact</a>
-                    <a class="nav__link nav__link--btn" href="#">hire me</a>
+                <div class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#works">work</a>
+                    <a class="nav__link" href="#" data-scroll="#about">about me</a>
+                    <a class="nav__link" href="#" data-scroll="#blog">blog</a>
+                    <a class="nav__link" href="#" data-scroll="#intro">contact</a>
+                    <a class="nav__link nav__link--btn" href="#" data-scroll="#hireme">hire me</a>
                 </div>
             </div>
 <!--            ./header__inner-->
@@ -40,7 +41,7 @@
 <!--    ./header-->
     
 <!--INTRO -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
             <div class="intro__content">
@@ -83,7 +84,7 @@
 <!--    ./ intro -->
 
 <!--WORKS-->
-    <div class="works">
+    <div class="works" id="works">
         <div class="container">
             <div class="works__nav">
                 <a class="works__nav-link" href="#">All</a>
@@ -234,7 +235,7 @@
 <!--    /.works-->
 
 <!--ABOUT-->
-<div class="about">
+<div class="about" id="about">
    <div class="container">
        <div class="about__inner">
                 <div class="about__photo">
@@ -282,7 +283,7 @@
 <!--./reviews-->
 
 <!--README-->
-<div class="readme">
+<div class="readme" id="blog">
     <div class="container">
         <div class="readme__title">read me</div>
         <div class="readme__subtitle">Sometimes i write something smart</div>
@@ -442,7 +443,7 @@
 </div>
 <!--./modal-->
 
-
-
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

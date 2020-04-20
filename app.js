@@ -46,14 +46,30 @@ $(function(){
     });
     
     
-    
-    $(document).ready(function(){
-      //при нажатию на любую кнопку, имеющую класс .modal_btn
-      $(".modal_btn").click(function() {
-        //открыть модальное окно с id="myModal"
-        $("#myModal").modal('show');
-      });
+    let filter = $("[data-filter]");
+    filter.on("click", function(event){
+        event.preventDefault();
+        let cat = $(this).data('filter');
+        $("[data-cat]").each(function(){
+            let workCat = $(this).data('cat');
+            
+            if(cat == 'all'){
+                $("[data-cat]").removeClass('hide');
+            }
+            else{
+                if(workCat != cat){
+                    $(this).addClass('hide');
+                }
+                else{
+                    $(this).removeClass('hide');
+                }
+                
+            }
+            
+            
+        })
+        
+
     });
-    
     
 }); 

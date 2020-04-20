@@ -87,20 +87,20 @@
     <div class="works" id="works">
         <div class="container">
             <div class="works__nav">
-                <a class="works__nav-link" href="#">All</a>
-                <a class="works__nav-link" href="#">App</a>
-                <a class="works__nav-link" href="#">Websites</a>
-                <a class="works__nav-link" href="#">Interaction</a>
+                <a class="works__nav-link" href="#" data-filter="all">All</a>
+                <a class="works__nav-link" href="#" data-filter="app">App</a>
+                <a class="works__nav-link" href="#"data-filter="websites">Websites</a>
+                <a class="works__nav-link" href="#"data-filter="interaction">Interaction</a>
             </div>
             
             <div class="portfolio">
                
-                    <div class="portfolio__col">
+                    <div class="portfolio__col" data-cat="app">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category APP
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -109,12 +109,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="websites">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category WEB
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -123,12 +123,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="interaction">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category Interaction
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -137,12 +137,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="app">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category APP
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -151,12 +151,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="app">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category APP
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -165,12 +165,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="interaction">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category INT
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -179,12 +179,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="interaction">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category INT
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -193,12 +193,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="websites">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category WEB
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -207,12 +207,12 @@
                             </div>
                         </div>
                     </div>
-                   <div class="portfolio__col">
+                   <div class="portfolio__col" data-cat="websites">
                         <div class="work">
                             <img class="work__image" src="https://placehold.it/370x300/" alt="">
                             <div class="work__content">
                                 <div class="work__cat">
-                                    category
+                                    category WEB
                                 </div>
                                 <div class="work__title">
                                     Project title
@@ -221,6 +221,7 @@
                             </div>
                         </div>
                     </div>
+                    
                    
                     
             </div>
@@ -446,7 +447,7 @@
     
     
 <!--MODAL-->
-<div class="modal">
+<div class="modal" style="display: none">>
    <div class="modal__dialog">
      
       <button class="modal_close"  type="button">

@@ -554,6 +554,9 @@ h6 {
 .modal_close:hover {
   transform: rotate(90deg);
 }
+.hide {
+  display: none;
+}
 .modal-work {
   display: flex;
 }

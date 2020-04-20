@@ -6,8 +6,7 @@ $(function(){
     
     $(window).on("scroll load resize", function(){//делаем проверку при скроле загрузке и изменении размера
         introH = intro.innerHeight() - 300;//перезаписывваем при каждом событии
-        scrollPos = $(this).scrollTop();//отслеживаем изменение значения скрола (this значит работает с материнским элементом)
-//        console.log(scrollPos);
+        scrollPos = $(this).scrollTop();//отслеживаем изменение значения скрола
          if( scrollPos > introH ){
             header.addClass("fixed");
         } else{
@@ -17,12 +16,10 @@ $(function(){
     
     
     //плавный скролл
-    //атрибуты пишем в квадратных скобках
     $("[data-scroll]").on("click", function(event){
         event.preventDefault();//стандартное поведение по ссылке
         let elementId = $(this).data('scroll');//присваиваем переменной значение ссылки по которой кликаем
         let elementOffset = $(elementId).offset().top - 70;//находим отсутп от верха страницы
-       // console.log(elementOffset);
         nav.removeClass("show");
         $("html, body").animate({
             scrollTop: elementOffset
@@ -46,6 +43,16 @@ $(function(){
         arrows: false,
         dots: true
 
+    });
+    
+    
+    
+    $(document).ready(function(){
+      //при нажатию на любую кнопку, имеющую класс .modal_btn
+      $(".modal_btn").click(function() {
+        //открыть модальное окно с id="myModal"
+        $("#myModal").modal('show');
+      });
     });
     
     

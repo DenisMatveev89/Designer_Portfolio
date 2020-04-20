@@ -71,7 +71,7 @@
                 </div>
 <!--                ./social-->
                 <a class="btn" href="">HIRE ME</a>
-                <button class="btn" type="button">SEE MY RESUME</button>
+                <button class="btn" id="modal_btn" type="button">SEE MY RESUME</button>
             </div>
 <!--            ./intro__content-->
             <img class="intro__photo" src="/images/photo.png" alt="">
@@ -401,11 +401,12 @@
 
 
 <!--MODAL-->
-<div class="modal" style="display: none">
+<div class="modal" id="myModal" style="display: none">
    <div class="modal__dialog">
      
-      <button class="modal_close" type="button">
+      <button class="modal_close"  type="button">
           <img src="/images/modal%20close.svg" alt="close">
+          
       </button>
       
        <div class="modal-work">
@@ -442,6 +443,23 @@
 <!--   ./modal__dialog-->
 </div>
 <!--./modal-->
+    
+    
+<!--MODAL-->
+<div class="modal">
+   <div class="modal__dialog">
+     
+      <button class="modal_close"  type="button">
+          <img src="/images/modal%20close.svg" alt="close">
+          
+      </button>
+      
+       
+   </div>
+<!--   ./modal__dialog-->
+</div>
+<!--./modal-->
+
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

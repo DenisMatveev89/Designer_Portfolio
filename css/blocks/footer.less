@@ -1,0 +1,58 @@
+//main: ../style.less
+.footer{
+    background: #2B2A2C;
+    height: 58px;
+    padding: 1.35rem 0;
+}
+.footer__item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: @gray-light;
+}
+
+.footer__nav-link{
+    margin-right: .7rem;
+    text-decoration: none;
+    color: @gray-light;
+    
+}
+.footer__copy{
+    margin-right: 2rem;
+}
+
+.footer__social{
+    display: flex;
+    align-content: center;
+    padding-right: 8rem;
+    a{
+        margin-right: 1.2rem; 
+        text-decoration: none;
+    }
+}
+
+.social{
+    height: 21px;
+}
+
+.footer__nav-link{
+    padding: 1px;
+    &:hover{
+        text-decoration: underline;
+        transition: .2s linear;
+    }
+    &--btn{
+        border: 1px solid @gray-light;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        &:hover{
+            text-decoration: none;
+            color: @black;
+            background-color: @gray-light;
+        }
+    }
+}
+
+.footer__credits{
+    display: flex;
+}

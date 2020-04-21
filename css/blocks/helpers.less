@@ -8,3 +8,25 @@
     max-width: 100%;
     height: auto;
 }
+.header{
+	padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+/*НАЛОЖЕНИЕ СО СМЕЩЕНИЕМ*/
+    z-index: 1000; 
+    position: absolute;
+    background-color: fade(@white, 70%);
+}
+
+.header.fixed{
+    position: fixed;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -70,8 +70,8 @@
                    </a>                                                     
                 </div>
 <!--                ./social-->
-                <a class="btn" href="" data-modal="#hireme">HIRE ME</a>
-                <button class="btn" data-modal="#seemyresume" type="button">SEE MY RESUME</button>
+                <a class="btn" href="" data-modal="#modal_hireme">HIRE ME</a>
+                <button class="btn" data-modal="#modal_resume" type="button">SEE MY RESUME</button>
             </div>
 <!--            ./intro__content-->
             <img class="intro__photo" src="/images/photo.png" alt="">
@@ -248,7 +248,8 @@
                     <div class="about__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc consequat velit, in mollis erat nibh in libero.
                     </div> 
-                    <a class="btn" href="">HIRE ME</a><a class="btn" href="">SEE MY RESUME</a>      
+                    <a class="btn" href="">HIRE ME</a>
+                    <a class="btn" data-modal="#modal_resume" href="">SEE MY RESUME</a>      
                 </div>
             
         </div>
@@ -401,7 +402,7 @@
 
 
 
-<!--MODAL-->
+<!--MODAL_PROJECT-->
 <div class="modal" id="modal_project">
    <div class="modal__dialog">
      
@@ -437,7 +438,9 @@
                       <img src="/images/next.svg" height="10" alt="">
                 </button>
                </div>
+<!--               ./modal-work__nav-->
            </div>
+<!--           ./modal-work__content-->
        </div>
 <!--       ./modal-work-->
    </div>
@@ -446,14 +449,102 @@
 <!--./modal-->
     
     
-<!--MODAL-->
-<div class="modal">>
+<!--MODAL_RESUME-->
+<div class="modal" id="modal_resume">
    <div class="modal__dialog">
-     
       <button class="modal_close" data-close type="button">
           <img src="/images/modal%20close.svg" alt="close">
-          
       </button>
+      
+      <div class="modal-resume">
+          <div class="modal-resume__title">RESUME</div>
+          <div class="modal-resume__officebtn"></div>
+          <div class="modal-resume__inner">
+              
+             <div class="modal-resume__rside">
+                 <div class="modal-resume__subtitle">EXPERIENCE</div>
+                 <div class="modal-resume__year">2017 - <b>Present</b></div>
+                 <div class="modal-resume__company">Freelancer</div>
+                 <div class="modal-resume__position">Art Director</div>
+                 <div class="modal-resume__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam
+                 </div>
+                 
+                 <div class="modal-resume__year">2016 - 2017</div>
+                 <div class="modal-resume__company">The Best Agency</div>
+                 <div class="modal-resume__position">Art Director</div>
+                 <div class="modal-resume__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam
+                 </div>
+                 
+                 <div class="modal-resume__year">2014 - 2016</div>
+                 <div class="modal-resume__company">The Best Agency</div>
+                 <div class="modal-resume__position">Senior UI/UX Designer</div>
+                 <div class="modal-resume__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam 
+                 </div>
+                 
+                 <div class="modal-resume__year">2012 - 2014</div>
+                 <div class="modal-resume__company">Good Agency</div>
+                 <div class="modal-resume__position">UI/UX Designer</div>
+                 <div class="modal-resume__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam 
+                 </div>
+              </div>
+<!--              ./modal-resume__rside-->
+              
+              <div class="modal-resume__lside">
+                 <div class="modal-resume__subtitle">education</div>
+                 <div class="modal-resume__year">2005 - 2010</div>
+                 <div class="modal-resume__company">UI/UX Design</div>
+                 <div class="modal-resume__position">LA University, USA</div>
+              
+                 
+                 <div class="modal-resume__year">2002 - 2005</div>
+                 <div class="modal-resume__company">UI/UX Design</div>
+                 <div class="modal-resume__position">LA University, USA</div>
+                 
+                 <div class="skills">
+                 <div class="skills__title">skills</div>
+                 <div class="skills__inner">
+                    <div class="skills__items">
+                        <div class="skills__items-title">UI/UX Design</div>
+                        <div class="skills__raitline">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                        <div class="skills__items">
+                        <div class="skills__items-title">ilustrator</div>
+                        <div class="skills__raitline">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                        <div class="skills__items">
+                        <div class="skills__items-title">Photoshop</div>
+                        <div class="skills__raitline">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                        <div class="skills__items">
+                        <div class="skills__items-title">Sketch</div>
+                        <div class="skills__raitline">
+                            <div class="progress" style="width: 40%"></div>
+                        </div>
+                    </div>                                          
+                 </div>
+<!--                 ./skills__inner-->
+                 </div>
+<!--                 ./skills-->
+              </div>
+<!--              ./modal-resume__lside-->
+          </div>
+<!--          ./modal-resume__inner-->
+      <div class="text__center">
+          <a class="btn" href="" data-modal="#modal_hireme">HIRE ME</a>
+      </div>
+<!--      ./Button-->
+      </div>
+<!--      ./modal-resume-->
       
        
    </div>

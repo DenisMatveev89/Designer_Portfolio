@@ -33,18 +33,7 @@ h6 {
   margin: 0 auto;
 }
 .header {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  width: 100%;
-  top: 0;
-  left: 0;
-  /*НАЛОЖЕНИЕ СО СМЕЩЕНИЕМ*/
-  z-index: 1000;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.header.fixed {
-  position: fixed;
+  padding-top: 1.2rem;
 }
 .header__inner {
   display: flex;
@@ -516,6 +505,36 @@ h6 {
 .footer__credits {
   display: flex;
 }
+.skills {
+  margin-top: 2.13rem;
+}
+.skills__title {
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.skills__items {
+  display: flex;
+  align-items: center;
+}
+.skills__items-title {
+  width: 100px;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+.skills__raitline {
+  display: flex;
+  background-color: #EFEFEF;
+  height: 6px;
+  width: 139px;
+  margin-left: 2rem;
+}
+.progress {
+  height: 100%;
+  background-color: #6a696b;
+}
 /* modal */
 .modal {
   display: none;
@@ -634,6 +653,61 @@ h6 {
   font-family: inherit;
   outline: none;
 }
+.modal-resume {
+  text-align: center;
+  padding-top: 5.2rem;
+  padding-bottom: 4.45rem;
+}
+.modal-resume__title {
+  margin-bottom: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.modal-resume__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.6rem 14rem;
+}
+.modal-resume__rside {
+  width: 50%;
+  text-align: end;
+  padding-right: 3.1rem;
+}
+.modal-resume__lside {
+  width: 50%;
+  text-align: left;
+  padding-left: 3.1rem;
+  content: "";
+  border-left: 1px solid #6a696b;
+}
+.modal-resume__subtitle {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.modal-resume__year {
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+.modal-resume__company {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.modal-resume__position {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+.modal-resume__text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6a696b;
+}
 /*Helpers*/
 .text__center {
   text-align: center;
@@ -643,4 +717,23 @@ h6 {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.header {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /*НАЛОЖЕНИЕ СО СМЕЩЕНИЕМ*/
+  z-index: 1000;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.header.fixed {
+  position: fixed;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
